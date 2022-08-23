@@ -1,0 +1,6 @@
+make: Entering directory 'c:/Users/khizh/OneDrive/Documents/Code/leetcode/dart'
+echo "leetcode solutions"
+echo ""
+dart --version
+make: Leaving directory 'c:/Users/khizh/OneDrive/Documents/Code/leetcode/dart'
+ 

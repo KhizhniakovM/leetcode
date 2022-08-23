@@ -18,7 +18,6 @@
 // sentence consists of lowercase English letters.
 
 class Solution {
-  bool checkIfPangram(String sentence) {
-    return true;
-  }
+  bool checkIfPangram(String sentence) =>
+      sentence.split('').toSet().length == 26;
 }

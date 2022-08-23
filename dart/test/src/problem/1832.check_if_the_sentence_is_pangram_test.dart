@@ -8,6 +8,6 @@ void main() => group('1832.check if the sentence is pangram', () {
         expect(func('thequickbrownfoxjumpsoverthelazydog'), equals(true));
       });
       test("func('leetcode')", () {
-        expect(func('leetcode'), equals(true));
+        expect(func('leetcode'), equals(false));
       });
     });
