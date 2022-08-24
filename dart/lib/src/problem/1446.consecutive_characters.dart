@@ -22,18 +22,15 @@ import 'dart:math';
 class Solution {
   int maxPower(String s) {
     var maxPower = 1;
+    var currentPower = 1;
 
-    var currentPower = 0;
-    var lastLetter = '';
-
-    for (final l in s.split('')) {
-      if (lastLetter != l) {
-        lastLetter = l;
-        currentPower = 1;
-      } else {
+    for (var i = 1; i < s.length; i++) {
+      if (s[i - 1] == s[i]) {
         currentPower += 1;
-        maxPower = max(maxPower, currentPower);
+      } else {
+        currentPower = 1;
       }
+      maxPower = max(maxPower, currentPower);
     }
     return maxPower;
   }
