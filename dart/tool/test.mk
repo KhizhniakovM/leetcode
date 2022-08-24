@@ -1,4 +1,4 @@
-.PHONY: test
+.PHONY: test, test_cov
 
 test_cov: get
 	@dart run coverage:test_with_coverage -fb -o coverage -- \
