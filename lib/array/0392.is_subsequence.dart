@@ -24,7 +24,7 @@
   In this scenario, how would you change your code?
 */
 
-class Solution {
+class SolutionV1 {
   bool isSubsequence(String s, String t) {
     int currentIndex = 0;
 
@@ -34,5 +34,18 @@ class Solution {
       if (s[currentIndex] == letter) currentIndex++;
     }
     return currentIndex == s.length;
+  }
+}
+
+/// Two pointer solution
+class SolutionV2 {
+  bool isSubsequence(String s, String t) {
+    int i = 0;
+    int j = 0;
+    while (i < s.length && j < t.length) {
+      if (s[i] == t[j]) i++;
+      j++;
+    }
+    return i == s.length;
   }
 }
