@@ -25,11 +25,10 @@ class Solution {
   String longestCommonPrefix(List<String> strs) {
     if (strs.isEmpty) return '';
     String result = '';
-    for (int i = 0; i <= 200; i++) {
-      if (strs.first.length - 1 < i) return result;
+    for (int i = 0; i < strs.first.length; i++) {
       final letter = strs.first[i];
       for (int j = 1; j < strs.length; j++) {
-        if (strs[j].length - 1 < i) return result;
+        if (strs[j].length == i) return result;
         if (strs[j][i] != letter) return result;
       }
       result += letter;
