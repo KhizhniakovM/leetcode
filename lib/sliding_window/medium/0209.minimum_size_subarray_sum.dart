@@ -30,7 +30,7 @@ import 'dart:math' as math;
 
 class Solution {
   /// Time O(n)
-  /// MEmeory O(1)
+  /// Memory O(1)
   int minSubArrayLen(int target, List<int> nums) {
     int l = 0, min = nums.length + 1, cur = 0;
     for (int r = 0; r < nums.length; r++) {
